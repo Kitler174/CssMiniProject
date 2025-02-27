@@ -1,3 +1,25 @@
+.inp4{
+    margin-left:1vmin;
+    margin-right:1vmin;
+    font-size:3vmin;
+    height: 8vmin; 
+    width: 30vmin;
+    background-color: rgb(255, 255, 255);
+    border: 0.5vmin rgb(0, 0, 0) solid;
+    color: rgb(0, 0, 0);
+    margin-bottom:4vmin;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.inp4:hover {
+    border: 0.5vmin rgb(255, 255, 255) solid;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    cursor: pointer;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -29,15 +51,43 @@ body {
     user-select: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-.mid{
+.midup{
     left:0;
     position: absolute;
     top: 12vmin;
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-height: calc(100% - 32vmin);
+    max-height: 1vmin;
+    overflow: hidden;
+    font-size: 2.5vmin;
+    overflow-y: auto;
+    color: #333;
+    scroll-behavior: smooth;
+
+}
+
+.divider {
+    height: 5px;
+    background: rgb(0, 0, 0);
+    border: solid black 1vmin;
+    width:80vw;
+    border-radius: 1vmin;
+    cursor: ns-resize; 
+    position: absolute;
+    top: 14vmin;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.mid{
+    left:0;
+    position: absolute;
+    top: 16vmin;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: calc(100% - 40vmin);
     overflow: hidden;
     font-size: 2.5vmin;
     overflow-y: auto;
@@ -80,7 +130,7 @@ body {
 
 
 
-button{
+.button2{
     padding: 12px 20px;
     margin: 10px;
     background-color: #4a90e2;
@@ -93,7 +143,7 @@ button{
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
+.button2:hover {
     background-color: #3c7ec3;
     transform: translateY(-2px);
 }
@@ -161,4 +211,36 @@ p{
     button {
         font-size: 3vmin;
     }
+}
+
+#fix{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 0.2vmin black solid;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 2vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vmin;
+}
+
+#fix2{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 0.2vmin black solid;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 2vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vmin;
 }
